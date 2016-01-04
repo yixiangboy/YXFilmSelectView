@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "YXFilmSelectView"
   s.version      = "0.0.1"
-  s.summary      = "A short description of YXFilmSelectView."
+  s.summary      = "Film Select View"
 
   s.description  = <<-DESC
                    A longer description of YXFilmSelectView in Markdown format.
