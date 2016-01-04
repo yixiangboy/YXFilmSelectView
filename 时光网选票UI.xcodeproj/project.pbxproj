@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA273C761C08583D00DC5BC1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA273C751C08583D00DC5BC1 /* main.m */; };
+		DA273C791C08583D00DC5BC1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA273C781C08583D00DC5BC1 /* AppDelegate.m */; };
+		DA273C7C1C08583D00DC5BC1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA273C7B1C08583D00DC5BC1 /* ViewController.m */; };
+		DA273C7F1C08583D00DC5BC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA273C7D1C08583D00DC5BC1 /* Main.storyboard */; };
+		DA273C811C08583D00DC5BC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA273C801C08583D00DC5BC1 /* Assets.xcassets */; };
+		DA273C841C08583D00DC5BC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA273C821C08583D00DC5BC1 /* LaunchScreen.storyboard */; };
+		DA4725821C2FA5E7005F08CD /* YXFilmSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4725811C2FA5E7005F08CD /* YXFilmSelectView.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DA273C711C08583D00DC5BC1 /* 时光网选票UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "时光网选票UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA273C751C08583D00DC5BC1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DA273C771C08583D00DC5BC1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DA273C781C08583D00DC5BC1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DA273C7A1C08583D00DC5BC1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DA273C7B1C08583D00DC5BC1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DA273C7E1C08583D00DC5BC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DA273C801C08583D00DC5BC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA273C831C08583D00DC5BC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DA273C851C08583D00DC5BC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA4725801C2FA5E7005F08CD /* YXFilmSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXFilmSelectView.h; sourceTree = "<group>"; };
+		DA4725811C2FA5E7005F08CD /* YXFilmSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXFilmSelectView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA273C6E1C08583C00DC5BC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA273C681C08583C00DC5BC1 = {
+			isa = PBXGroup;
+			children = (
+				DA273C731C08583D00DC5BC1 /* 时光网选票UI */,
+				DA273C721C08583D00DC5BC1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA273C721C08583D00DC5BC1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA273C711C08583D00DC5BC1 /* 时光网选票UI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA273C731C08583D00DC5BC1 /* 时光网选票UI */ = {
+			isa = PBXGroup;
+			children = (
+				DA273C771C08583D00DC5BC1 /* AppDelegate.h */,
+				DA273C781C08583D00DC5BC1 /* AppDelegate.m */,
+				DA273C7A1C08583D00DC5BC1 /* ViewController.h */,
+				DA273C7B1C08583D00DC5BC1 /* ViewController.m */,
+				DA273C7D1C08583D00DC5BC1 /* Main.storyboard */,
+				DA273C801C08583D00DC5BC1 /* Assets.xcassets */,
+				DA273C821C08583D00DC5BC1 /* LaunchScreen.storyboard */,
+				DA273C851C08583D00DC5BC1 /* Info.plist */,
+				DA273C741C08583D00DC5BC1 /* Supporting Files */,
+				DA4725801C2FA5E7005F08CD /* YXFilmSelectView.h */,
+				DA4725811C2FA5E7005F08CD /* YXFilmSelectView.m */,
+			);
+			path = "时光网选票UI";
+			sourceTree = "<group>";
+		};
+		DA273C741C08583D00DC5BC1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA273C751C08583D00DC5BC1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA273C701C08583C00DC5BC1 /* 时光网选票UI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA273C881C08583D00DC5BC1 /* Build configuration list for PBXNativeTarget "时光网选票UI" */;
+			buildPhases = (
+				DA273C6D1C08583C00DC5BC1 /* Sources */,
+				DA273C6E1C08583C00DC5BC1 /* Frameworks */,
+				DA273C6F1C08583C00DC5BC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "时光网选票UI";
+			productName = "时光网选票UI";
+			productReference = DA273C711C08583D00DC5BC1 /* 时光网选票UI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA273C691C08583C00DC5BC1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = yixiang;
+				TargetAttributes = {
+					DA273C701C08583C00DC5BC1 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = DA273C6C1C08583C00DC5BC1 /* Build configuration list for PBXProject "时光网选票UI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA273C681C08583C00DC5BC1;
+			productRefGroup = DA273C721C08583D00DC5BC1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA273C701C08583C00DC5BC1 /* 时光网选票UI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA273C6F1C08583C00DC5BC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA273C841C08583D00DC5BC1 /* LaunchScreen.storyboard in Resources */,
+				DA273C811C08583D00DC5BC1 /* Assets.xcassets in Resources */,
+				DA273C7F1C08583D00DC5BC1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA273C6D1C08583C00DC5BC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA273C7C1C08583D00DC5BC1 /* ViewController.m in Sources */,
+				DA4725821C2FA5E7005F08CD /* YXFilmSelectView.m in Sources */,
+				DA273C791C08583D00DC5BC1 /* AppDelegate.m in Sources */,
+				DA273C761C08583D00DC5BC1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DA273C7D1C08583D00DC5BC1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA273C7E1C08583D00DC5BC1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DA273C821C08583D00DC5BC1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA273C831C08583D00DC5BC1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA273C861C08583D00DC5BC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DA273C871C08583D00DC5BC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA273C891C08583D00DC5BC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "时光网选票UI/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "alibaba.-----UI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DA273C8A1C08583D00DC5BC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "时光网选票UI/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "alibaba.-----UI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA273C6C1C08583C00DC5BC1 /* Build configuration list for PBXProject "时光网选票UI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA273C861C08583D00DC5BC1 /* Debug */,
+				DA273C871C08583D00DC5BC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA273C881C08583D00DC5BC1 /* Build configuration list for PBXNativeTarget "时光网选票UI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA273C891C08583D00DC5BC1 /* Debug */,
+				DA273C8A1C08583D00DC5BC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA273C691C08583C00DC5BC1 /* Project object */;
+}
