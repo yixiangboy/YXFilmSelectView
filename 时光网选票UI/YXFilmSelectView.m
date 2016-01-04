@@ -58,7 +58,7 @@
         CGFloat offsetX = LEFT_SPACE;
         for (int i=0; i<totalNum; i++) {
             
-            UIView *view = [[UIView alloc] initWithFrame:CGRectMake(offsetX, 0, NORMAL_VIEW_HEIGHT, NORMAL_VIEW_HEIGHT)];
+            UIView *view = [[UIView alloc] initWithFrame:CGRectMake(offsetX, 0, NORMAL_VIEW_WIDTH, NORMAL_VIEW_HEIGHT)];
             [_scrollview addSubview:view];
             [_viewArray addObject:view];
             offsetX += NORMAL_VIEW_WIDTH+ITEM_SPACE;
@@ -88,7 +88,9 @@
     UIImageView *imageView = (UIImageView *)tap.view;
     NSInteger tag = imageView.tag;
     
-    CGFloat offsetX = tag*(NORMAL_VIEW_WIDTH+ITEM_SPACE);
+    UIView *containerView = _viewArray[tag];
+    
+    CGFloat offsetX = CGRectGetMidX(containerView.frame)-SCREEN_WIDTH/2;
     
     
     [_scrollview scrollRectToVisible:CGRectMake(offsetX, 0, SCREEN_WIDTH, 120) animated:YES];
@@ -111,8 +113,10 @@
     
     CGFloat scale =  (scrollView.contentOffset.x-currentIndex*(NORMAL_VIEW_WIDTH+ITEM_SPACE))/(NORMAL_VIEW_WIDTH+ITEM_SPACE);
     
+    //NSLog(@"%f",scale);
+    
     CGFloat width = SELECT_VIEW_WIDTH-scale*(SELECT_VIEW_WIDTH-NORMAL_VIEW_WIDTH);
-    CGFloat height = SELECT_VIEW_HEIGHT-scale*(SELECT_VIEW_HEIGHT-NORMAL_VIEW_WIDTH);
+    CGFloat height = SELECT_VIEW_HEIGHT-scale*(SELECT_VIEW_HEIGHT-NORMAL_VIEW_HEIGHT);
     if (width<NORMAL_VIEW_WIDTH) {
         width = NORMAL_VIEW_WIDTH;
     }
@@ -125,7 +129,7 @@
     if (height>SELECT_VIEW_HEIGHT) {
         height = SELECT_VIEW_HEIGHT;
     }
-    CGRect rect = CGRectMake(-(width-NORMAL_VIEW_HEIGHT)/2, 0, width, height);
+    CGRect rect = CGRectMake(-(width-NORMAL_VIEW_WIDTH)/2, 0, width, height);
     currentImageView.frame = rect;
     
     width = NORMAL_VIEW_WIDTH+scale*(SELECT_VIEW_WIDTH-NORMAL_VIEW_WIDTH);
@@ -142,17 +146,16 @@
     if (height>SELECT_VIEW_HEIGHT) {
         height = SELECT_VIEW_HEIGHT;
     }
-    rect = CGRectMake(-(width-NORMAL_VIEW_HEIGHT)/2, 0, width, height);
+    rect = CGRectMake(-(width-NORMAL_VIEW_WIDTH)/2, 0, width, height);
+    NSLog(@"%@",NSStringFromCGRect(rect));
     rightImageView.frame = rect;
-    
-    
-    
 }
 
 -(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
     if (!decelerate) {
         int currentIndex = roundf(scrollView.contentOffset.x/(NORMAL_VIEW_WIDTH+ITEM_SPACE));
-        CGFloat offsetX = currentIndex*(NORMAL_VIEW_WIDTH+ITEM_SPACE);
+        UIView *containerView = _viewArray[currentIndex];
+        CGFloat offsetX = CGRectGetMidX(containerView.frame)-SCREEN_WIDTH/2;
         [_scrollview scrollRectToVisible:CGRectMake(offsetX, 0, SCREEN_WIDTH, 120) animated:YES];
         if (_delegate && [_delegate respondsToSelector:@selector(itemSelected:)]) {
             [_delegate itemSelected:currentIndex];
@@ -162,7 +165,8 @@
 
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
     int currentIndex = roundf(scrollView.contentOffset.x/(NORMAL_VIEW_WIDTH+ITEM_SPACE));
-    CGFloat offsetX = currentIndex*(NORMAL_VIEW_WIDTH+ITEM_SPACE);
+    UIView *containerView = _viewArray[currentIndex];
+    CGFloat offsetX = CGRectGetMidX(containerView.frame)-SCREEN_WIDTH/2;
     [_scrollview scrollRectToVisible:CGRectMake(offsetX, 0, SCREEN_WIDTH, 120) animated:YES];
     if (_delegate && [_delegate respondsToSelector:@selector(itemSelected:)]) {
         [_delegate itemSelected:currentIndex];
